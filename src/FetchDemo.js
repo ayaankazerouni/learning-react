@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const FetchDemo = props => {
-  const { subreddit } = props;
-
+const FetchDemo = ({ subreddit }) => {
   // Initially, "posts" is an empty array
   const [posts, setPosts] = useState([]);
 
