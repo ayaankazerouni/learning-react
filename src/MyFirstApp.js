@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import Table from './Table';
 import Form from './Form';
-import FetchDemo from './FetchDemo';
 
 function App() {
   const [ characters, setCharacters] = useState([]);
@@ -120,7 +119,6 @@ class MyFirstApp extends Component {
     <div className="container">
       <Table peopleData={characters} removePerson={this.removePerson} />
       <Form handleSubmit={this.handleSubmit}/>
-      {/* <FetchDemo subreddit="calpoly" /> */}
     </div>
     )
   }
